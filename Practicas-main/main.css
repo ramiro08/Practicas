@@ -1,0 +1,16 @@
+.efecto{
+
+width: 200px ;
+border-radius:50%;
+border:4px;
+border-color:blue; 
+}
+
+
+
+.efecto:hover
+{
+width: 150px;
+transition: 3s;
+
+}

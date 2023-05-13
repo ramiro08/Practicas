@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, li{
+    list-style: none;
+}
+.clearfix::after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+    color: #999;
+    margin-top: 60px;
+}
+p{
+    line-height: 1.4;
+}
+.estilo-nav{
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    font-size: 0.7rem;
+}
+.text-center{
+    text-align: center;
+}
+.site-logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    margin: 0.1rem;
+}
+.container{
+    max-width: 1200px;
+    margin: 0;
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+}
+.nav-bar .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#drop-down-cbox{
+    display: none;
+}
+#drop-down-cbox + label{
+    position: relative;
+    display: none;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background-color: transparent;
+    transition: all 10ms ease-in-out;
+}
+#drop-down-cbox + label span{
+    position: absolute;
+    display: block;
+    background-color: #cb4335;
+    width: 34px;
+    height: 4px;
+    border-radius: 2px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 300ms ease-in-out;
+}
+#drop-down-cbox + label span:nth-child(1){
+    top: 35%;
+}
+#drop-down-cbox + label span:nth-child(2){
+    top: 50%;
+}
+#drop-down-cbox + label span:nth-child(3){
+    top: 65%;
+}
+#drop-down-cbox:checked + label{
+    background-color: #cb4335;
+}
+#drop-down-cbox:checked + label span{
+    background-color: white;
+}
+#drop-down-cbox:checked + label span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+#drop-down-cbox:checked + label span:nth-child(2){
+    left: 50%;
+}
+#drop-down-cbox:checked + label span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.main-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-nav{
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.main-nav li a, .main-nav li span{
+    display: block;
+    width: 100%;
+    height: 10px;
+}
+.main-nav li a:hover, .main-nav li span:hover{
+    border-bottom: 3px solid #cb4335;
+}
+.main-nav li > ul{
+    max-height: 180px;
+    height: auto;
+}
+.main-nav li > ul li a,
+.main-nav li > ul li span{
+    background-color: white;
+}
+.main-nav li > ul li a:hover,
+.main-nav li > ul li span:hover{
+    background-color: #999;
+    color: #fff;
+    border-bottom: none;
+}
+@media(max-width:800 ){
+    
+}

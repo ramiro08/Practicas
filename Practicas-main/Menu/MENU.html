@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>MENU</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="container">
+            <input type="checkbox" id="drop-down-cbox">
+            <label for="drop-down-cbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <h1 class="site-logo">Menu Elver</h1>
+            <ul class="main-nav estilo-nav">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">ACERCA DE</a></li>
+                <li>
+                    <span>SERVICIOS</span>
+                    <ul>
+                        <li><a href="#">DISEÑO WEB</a></li>
+                        <li><a href="#">MARKETING</a></li>
+                        <li><a href="#">COMUNITY</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACTO</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <!--terminar navbar-->
+    <!--inicia la barra de contacto-->
+    <div class="total">
+        <div class="barra">
+            <div class="parte1">
+                <ul>
+                    <li><a href="tel:5555555555"> telefono: 55-55-55-55-55 |</a></li>
+                    <li><a href="https://twitter.com" target="_blank"> twitter: |</a></li>
+                    <li><a href="https://facebook.com" target="_blank"> facebook: |</a></li>
+                    <li><a href="https://instagram.com" target="_blank"> instagram: |</a></li>
+                </ul>
+            </div>
+            <div class="parte2">
+                <form action="" method="post">
+                    <input type="text" placeholder="buscar" class="cajabuscar" id="buscar">
+                    <button onclick="buscar();" class="btnbuscar">buscar</button>
+                </form>
+            </div>
+        </div>+
+
+    </div>
+    <!--terminar la barra de contacto-->
+    <!--inicia el parallax-->
+    <div class="main">
+        <section class="content">
+            <div class="parallax img-uno" id="m">
+                <div class="texto-interior">
+                    <h2 id="m">Diseño y desarrollo web.</h2>
+                    <p>Damos vida a tus ideas en la web</p>
+                </div>
+            </div>
+        </section>
+     <!--parallax-->
+     <script>
+        function buscar(){
+            // var cajabuscar = document.getElementById("buscar").valu
+            var cajabuscar = prompt ("¿que deceas buscar?") ;
+            if (cajabuscar =="")
+            alert("no colocaste nada en el buscador");
+
+            else 
+            alert("tu criterio de busqueda es: "+cajabuscar ); |
+        }
+    </script>
+    </div>
+</body>
+
+</html>

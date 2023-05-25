@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRACTICAS CON ALERTAS</title>
+    </head>
+    <body>
+        <h2>Alertas con Html y javaScript</h2>
+
+        <input type="button" value="mensaje" onclick="mensaje()">
+        <hr>
+        <p>Alerta al presionar un checkbox</p>
+        <input type="checkbox" name="presion" onclick="presion()">
+        <hr>
+        <p>escribir con javaScript</p>
+        <input type="button" value="escribe el mensaje" onclick="document.write('lindo dia att ELVER');">
+        <hr>
+        <p>vinculo con alertas</p>
+        <a href="javaScript:alert('HAS LLEGADO A UNA ALERTA');"> DARLE CLICK</a>
+        <hr>
+        <a href="javaScript:window.print();">IMPRIMIR PANTALLA</a>
+        <hr>
+        <P> alerta con opciones aceptar cancelar </P>
+        <a href="#" onclick="SALIR()"> Salir De La Practica</a>
+        <!--funcion boton-->
+        <script>
+            function mensaje(){
+                alert("Esto es una alerta creada con javaScript");
+            }
+        </script>
+        <!-- funcion checkbox-->
+        <script>
+            function presion(){
+                alert("le has dado click al checkbox");
+            }
+        </script>
+        <!--funcion escribir-->
+        <!--texto
+        <script>
+            function escribir(){
+                document.write("Es Facil Trabajar Con El Write Con JavaScript Att. ELVER");
+            }
+        </script>
+    -->
+    <script>
+        function SALIR(){
+            var SALIR=confirm("¿DESEAS SALIR DE LA PRACTICA?")
+            if (SALIR){
+                alert("Gracias estas saliendo de la pagina")
+                window.location="https://github.com/ramiro08";
+            }
+            else{
+                alert("GRACIAS SIGUES CON NOSOTROS")
+            }
+
+        }
+    </script>
+    </body>
+</html>
